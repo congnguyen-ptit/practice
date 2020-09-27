@@ -8,6 +8,9 @@
                     <div class="card-body">
                         I'm an example component.
                     </div>
+                    <div id="content">
+                        {{ upperContent }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -16,8 +19,15 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data() {
+            return {
+                content: 'heheh'
+            }
+        },
+        computed: {
+            upperContent() {
+                return this.content.toUpperCase()
+            }
         }
     }
 </script>
