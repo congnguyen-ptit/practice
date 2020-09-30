@@ -7,6 +7,8 @@
 
                     <div class="card-body">
                         I'm an example component.
+                        commit 1
+                        commit 2
                     </div>
                     <div id="content">
                         {{ upperContent }}
